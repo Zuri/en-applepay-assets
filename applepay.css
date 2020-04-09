@@ -1,0 +1,33 @@
+#apple-pay-button {
+    background-image: url(applepay.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    float: left;
+    margin: 0 0 10px;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-appearance: -apple-pay-button;
+    -apple-pay-button-type: donate;
+}
+
+#apple-pay p {
+    font-size: .875rem;
+    color: #c92533;
+    font-style: italic;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+
+#apple-pay p::before {
+
+    content: 'Either this browser does not support Apple Pay or your Apple Pay account is not configured correctly. If you are using Safari on a supported device, make sure your Apple Pay account includes all necessary information including billing address and a valid credit card.';
+
+}
+
+#apple-pay.disabled {
+    display: none;
+}
